@@ -66,8 +66,16 @@ img {
     right: 0;
     width: 100%;
     background-color: var(--second-modal-color);
-    transition: transform .3s ease;
-    transform: translate(0, -100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    /* De arriba*/
+    /* transform: translate(0, -100%); */
+    /* De abajo*/
+    /* transform: translate(0, -100%); */
+    /* De la derecha*/
+    /* transform: translate(0, -100%); */
+    /* De la izquierda*/
+    /* transform: translate(0, -100%); */
 }
 
 .panel-btn {
@@ -86,7 +94,8 @@ img {
 }
 
 .panel.is-active {
-    transform: translate(0,0);
+    /* transform: translate(0,0); */
+    opacity: 1;
 }
 
 .menu {
